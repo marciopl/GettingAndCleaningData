@@ -14,3 +14,4 @@ You should create one R script called run_analysis.R that does the following.
 Once the dataset is unzipped on the same directory as the `run_analysis.R` file, the script will load the train and test data, merge both and set the appropriate labels. It will then filter the mean and standard deviation columns. Finally, it will load the `reshape2` library and use `melt` to create observations for each subject and activity and `dcast` to calculate the means for them.
 
 At the end it will have a `mean_std_data` dataset, results from steps 1 through 4 and a `tidy_data` dataset with the result from step 5.
+A `tidy_data.txt` file will be created as output of the script.

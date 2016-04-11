@@ -51,6 +51,6 @@ molten_data <- melt(mean_std_data, id.vars = c("subjectid", "activity"))
 tidy_data <- dcast(molten_data, subjectid + activity ~ variable, mean)
 rm(molten_data)
 
-
+write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE)
 
 
